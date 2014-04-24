@@ -11,13 +11,15 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 If you haven't used [Sass](http://sass-lang.com/) before, be sure to check out the [Install](http://sass-lang.com/install) guide, as it explains how to get Sass up and running on your machine. 
 
 
+###Set up boilderplate
+
 Once you have a basic understanding of Grunt and Sass you can follow these instructions to get this boilerplate working.
 
 To get started, clone this repository to your computer.
 
 Then run this in terminal to get started:
 
-	cd /path/to/where/you/download/basic-grunt-setup
+	cd /path/to/where/you/clone/basic-grunt-boilerplate
 	npm install
 
 This will get all of Grunt's files on your machine. Now you can start automating some tasks! Be sure to run each task in a seperate terminal window (or tab), as it each watches files and can't run concurrently without showing output in the terminal window.
