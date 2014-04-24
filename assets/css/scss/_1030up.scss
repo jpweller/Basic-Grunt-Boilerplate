@@ -4,21 +4,4 @@ Author:
 
 Stylesheet: Desktop Stylsheet
 
-This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop. 
-
 ******************************************************************/
-
-// large grid
-@for $i from 1 through $total-cols {
-  .col-lg-#{$i} {
-    @include col($i);
-  }
-}
-.last-lg {
-  float: right;
-  margin-right: 0;
-}
-.wrap-lg {
-  @include wrap;
-}

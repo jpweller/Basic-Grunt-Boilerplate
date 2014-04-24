@@ -122,17 +122,3 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['sass']);
 
 };
-
-
-/*
-
-npm install grunt-cli
-npm install grunt-concurrent --save-dev
-npm install grunt-contrib-watch --save-dev
-npm install grunt-contrib-sass --save-dev
-npm install grunt-contrib-clean --save-dev
-npm install grunt-contrib-jshint --save-dev
-npm install grunt-autoprefixer --save-dev
-npm install grunt-browser-sync
-
-*/
