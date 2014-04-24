@@ -1,0 +1,63 @@
+/******************************************************************
+Site Name: Canvas test
+Author: Jonathon Weller
+
+Stylesheet: Main Stylesheet
+******************************************************************/
+
+
+//venders
+@import "bourbon/bourbon";
+@import "susy/susy";
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+
+@import "normalize";
+@import "mixins";
+@import "type";
+
+// BASE (MOBILE) SIZE
+@import "base";
+
+// LARGER MOBILE DEVICES
+@media only screen and (min-width: 481px) {
+  @import "481up";
+}
+
+// TABLET & SMALLER LAPTOPS
+@media only screen and (min-width: 768px) {
+  @import "768up";
+}
+
+// DESKTOP
+@media only screen and (min-width: 1030px) {
+
+  // styles in 1030up.scss
+  @import "1030up";
+
+} // end of media query
+
+// // LARGE VIEWING SIZE
+// @media only screen and (min-width: 1240px) {
+//   @import "1240up";
+// }
+
+// // RETINA (2x RESOLUTION DEVICES)
+// @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+//        only screen and (min--moz-device-pixel-ratio: 1.5),
+//        only screen and (min-device-pixel-ratio: 1.5) {
+
+//   @import "2x";
+
+// }
+
+// // PRINT STYLESHEET
+// @media print {
+//   @import "print";
+// }

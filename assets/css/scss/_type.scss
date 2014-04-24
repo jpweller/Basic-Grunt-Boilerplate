@@ -1,0 +1,108 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+
+$sans-serif: sans-serif;
+$serif: serif;
+
+
+body,
+input,
+button,
+textarea {
+	font: 100%/1.5 $sans-serif;
+	color: $black;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+	color: $link-color;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+	/* on click */
+	&:active {
+		color: $link-hover;
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, .3 );
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+
+	font-weight: bold;
+	margin: 1em 0 .375em;
+	line-height: 1.2;
+
+	a {
+		text-decoration: none;
+		color: $black;
+		&:hover, &:focus {
+			color: $black;
+		}
+	}
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+}
+
+h2, .h2 {
+	font-size: 1.75em;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+}
+
+h4, .h4 {
+	font-size: 1.1em;
+}
+
+h5, .h5 {
+	font-size: .846em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+p {
+	margin: 0 0 1em;
+
+	word-break: break-all;
+	/* Non standard for webkit */
+	word-break: break-word;
+
+	hyphens: auto;
+}
+

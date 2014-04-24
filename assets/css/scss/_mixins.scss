@@ -1,0 +1,70 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+******************************************************************/
+
+
+/*********************
+COLORS
+*********************/
+
+$black:         #333;
+$dark-grey:     #666;
+$gey:           #999;
+$light-grey:    #ccc;
+$lighter-grey:  #f5f5f5;
+$white:         #fff;
+
+$pink:          #f01d4f;
+
+$link-color:    $pink;
+$link-hover:    darken($link-color, 9%);
+
+
+
+
+/*********************
+TOOLS
+*********************/
+
+// BORDER-BOX ALL THE THINGS! (http://paulirish.com/2012/box-sizing-border-box-ftw/)
+* {
+	box-sizing: border-box;
+}
+
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+.image-replacement {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+//CLEARFIX
+@mixin clearfix {
+	zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+.clearfix {
+	@include clearfix;
+}
+
+// text alignment
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+
+

@@ -1,0 +1,20 @@
+<!doctype html>
+
+<title></title>
+<link rel="stylesheet" href="assets/css/build/style.css" />
+
+
+<!-- switch commented scripts for production -->
+<script data-main="assets/js/config" src="assets/js/libs/require.js"></script>
+<!-- <script src="assets/js/build/production.js"></script> -->
+
+
+
+
+<!-- CSS inject scripts. Delete for production -->
+<script src='//172.23.58.147:3000/socket.io/socket.io.js'></script>
+<script>var ___socket___ = io.connect('http://172.23.58.147:3000');</script>
+<script src='//172.23.58.147:3001/client/browser-sync-client.0.8.2.js'></script>
+
+<!-- Watch's livereload scripts. Delete for production -->
+<script src="//localhost:35729/livereload.js"></script>

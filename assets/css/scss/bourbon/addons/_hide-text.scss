@@ -1,0 +1,16 @@
+// @mixin hide-text {
+//   overflow: hidden;
+
+//   &:before {
+//     content: "";
+//     display: block;
+//     width: 0;
+//     height: 100%;
+//   }
+// }
+
+@mixin hide-text {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
