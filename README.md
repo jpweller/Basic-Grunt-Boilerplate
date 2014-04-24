@@ -31,6 +31,6 @@ Run `grunt dev-js` to see JSHint. It will not concentrate your JavaScript files.
 Run `grunt dev-reload` to refresh the page in your browswer anytime there is a change to a JavaScript, HTML, or PHP file. You can run `grunt dev-html` to refresh only on HTML and PHP file changes.
 
 
-##Readying files for production
+###Readying files for production
 
 This is mainly to concentrate your RequireJS build. To do this run `grunt dev-prod`. In your HTML files delete the scripts to allow Grunt to reload the page and switch what script is commented out for RequireJS. Then you're ready to go live!
