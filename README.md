@@ -1,6 +1,6 @@
 #Basic Grunt Boilerplate
 
-> My grunt boilerplate including Sass, autoprefixer, JSHint, RequireJS, and browser reload tools
+> Grunt boilerplate including Sass, autoprefixer, JSHint, RequireJS, and browser reload tools
 
 
 ## Getting Started
